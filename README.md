@@ -4,9 +4,11 @@ This is a tutorial how to use AWS Code Deploy to deploy code from Github to a Ap
 ## Setup the target( An EC2 with Amazon Linux as OS)
 1. Provision EC2 instance
 
-2. Install Code Deploy Agent
+2. Take note of the region
+![region]/image/ec2-aws-region.png
+
+4. Install Code Deploy Agent
 ```sh
 sudo yum update
-sudo yum install ruby
-sudo yum install wget
+sudo yum -y install ruby wget
 ```
