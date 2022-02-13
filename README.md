@@ -38,4 +38,8 @@ You shoud get "The AWS CodeDeploy agent is running as PID <SOME PID Number>. If 
 ```sh
 sudo service codedeploy-agent start
 ```
+If you need to check the Code Deploy agent log
+```sh
+less /var/log/aws/codedeploy-agent/codedeploy-agent.log
+```
 
