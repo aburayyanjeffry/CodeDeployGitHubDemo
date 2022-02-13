@@ -6,7 +6,7 @@ This is a tutorial how to use AWS Code Deploy to deploy code from Github to a Ap
 
 2. Take note of the region
 
-![region](/images/ec2-aws-region.jpg)
+![region](images/aws-ec2-region.jpg)
 
 4. Install Code Deploy Agent
 ```sh
