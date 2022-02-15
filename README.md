@@ -52,4 +52,11 @@ less /var/log/aws/codedeploy-agent/codedeploy-agent.log
 
 ## Create Application 
 1. Go to https://console.aws.amazon.com/codedeploy
-2. 
+2. Create Application , Application Name = mycodedeploy , Compute Platform = EC2/On Premises
+3. Create Deployment Group = mycodedeploy01 , Service Role = < from step #1 >
+4. Environment Configuration = Amazon EC2 Instance , Tag Name = mycodedeploy
+4. Uncheck Load Balancer
+5. Create Deployment Group
+   
+## Create Deployment
+
