@@ -1,5 +1,6 @@
 # CodeDeployGitHubDemo
-This is a tutorial how to use AWS Code Deploy to deploy code from Github to a Apache webserver in an AWS EC2 instance
+This is a tutorial how to use AWS CodeDeploy to automate deployment of code from Github to an Apache webserver in an AWS EC2 instance.
+![CodeDevploy](images/codedeploy_flow.jpg)
 
 ## 1. Setup the required Roles
 i. CodeDeployServiceRole
