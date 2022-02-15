@@ -30,12 +30,12 @@ sudo yum -y install ruby wget
 curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone | sed 's/[a-z]$//'
 export MYREGION=$(curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone | sed 's/[a-z]$//')
 echo $MYREGION
-wget https://aws-codedeploy-$REGION.s3.$REGION.amazonaws.com/latest/install
+wget https://aws-codedeploy-$MYREGION.s3.$MYREGION.amazonaws.com/latest/install
 chmod +x install
 sudo ./install auto
 ```
 
-8. Check the Code Deply Agent status
+To Check the Code Deply Agent status
 ```sh
 sudo service codedeploy-agent status
 ```
