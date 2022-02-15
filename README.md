@@ -19,31 +19,18 @@ ii. CodeDeployInstanceRole
 i. Setup EC Instance
 1. Goto  https://console.aws.amazon.com/ec2/
 2. Launch Instances -> Amazon Linux 2 AMI 64-bit(x86)
-3. Next - > Configure Instance Details
-4. 
+3. Ensure Security Group to open port 22, 80
+4. Tag name = mycodedeploy
 
-2. Take note of the region
+ii. Install the CodeDeploy Agent
 
-![region](images/aws-ec2-region.jpg)
-
-3. Install Code Deploy Agent prerequisites
 ```sh
 sudo yum update
 sudo yum -y install ruby wget
-```
-
-5. Set the region. Get from step #2. In this example the region is *ap-southeast-1*
-```sh
-export MYREGION=ap-southeast-1 
-```
-
-6. Download the Code Deploy Agent
-```sh
+curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone | sed 's/[a-z]$//'
+export MYREGION=$(curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone | sed 's/[a-z]$//')
+echo $MYREGION
 wget https://aws-codedeploy-$REGION.s3.$REGION.amazonaws.com/latest/install
-```
-
-7. Install the Code Deploy Agent
-```sh
 chmod +x install
 sudo ./install auto
 ```
