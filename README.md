@@ -3,9 +3,15 @@ This is a tutorial how to use AWS CodeDeploy to automate deployment of code from
 ![CodeDevploy](images/codedeploy_flow.jpg)
 
 ## 1. Setup the required Roles
-i. CodeDeployServiceRole
+i. MyCodeDeployServiceRole
+   This is the role use by CodeDeploy to do its work
+   1. Go to https://console.aws.amazon.com/iam/
+   2. Access Management -> Roles -> Create role
+   3. Trusted Entity Type = AWS Service , Common Use Cases = EC2 -> Next
+   4. 
 
 ii. CodeDeployInstanceRole
+    This is the role use by EC2 instance to do its work
 
 
 ## 2. Setup the target( An EC2 with Amazon Linux as OS)
