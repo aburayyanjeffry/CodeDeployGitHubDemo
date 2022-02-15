@@ -13,6 +13,8 @@ i. MyCodeDeployServiceRole
 
 ii. CodeDeployInstanceRole
     This is the role use by EC2 instance to do its work
+    1. Access Management -> Roles -> Create role
+    2. 
 
 
 ## 2. Setup the target( An EC2 with Amazon Linux as OS)
@@ -48,3 +50,6 @@ If you need to check the Code Deploy agent log
 less /var/log/aws/codedeploy-agent/codedeploy-agent.log
 ```
 
+## Create Application 
+1. Go to https://console.aws.amazon.com/codedeploy
+2. 
