@@ -13,9 +13,28 @@ i. MyCodeDeployServiceRole
 
 ii. CodeDeployInstanceRole
     This is the role use by EC2 instance to do its work
-    1. Access Management -> Roles -> Create role
-    2. 
-
+    1. Access Management -> Policies - > Create Policy
+    2. Paste the following json in the json tab
+ ```json
+ {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        }
+    ]
+} 
+ ```
+  3. Review Policy, Create Policy, Name = CodeDeployEC2Policy
+  4. Access Management -> Roles -> Create role
+  5. Trusted Entity Type = AWS Service , Common Use Cases = EC2,
+  6. Check the CodeDeployEC2Policy
+  7. Name = CodeDeployInstanceRole
 
 ## 2. Setup the target( An EC2 with Amazon Linux as OS)
 i. Setup EC Instance
