@@ -7,15 +7,20 @@ i. MyCodeDeployServiceRole
    This is the role use by CodeDeploy to do its work
    1. Go to https://console.aws.amazon.com/iam/
    2. Access Management -> Roles -> Create role
-   3. Trusted Entity Type = AWS Service , Common Use Cases = EC2 -> Next
-   4. 
+   3. Trusted Entity Type = AWS Service , Common Use Cases = EC2, Use Cases For Other AWS Services = CodeDeploy-> Next
+   4. Ensure the policy is AWSCodeDeployRole -> Next
+   5. Enter Role Name = MyCodeDeployServiceRole -> Create Role
 
 ii. CodeDeployInstanceRole
     This is the role use by EC2 instance to do its work
 
 
 ## 2. Setup the target( An EC2 with Amazon Linux as OS)
-1. Provision EC2 instance
+i. Setup EC Instance
+1. Goto  https://console.aws.amazon.com/ec2/
+2. Launch Instances -> Amazon Linux 2 AMI 64-bit(x86)
+3. Next - > Configure Instance Details
+4. 
 
 2. Take note of the region
 
