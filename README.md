@@ -79,4 +79,9 @@ less /var/log/aws/codedeploy-agent/codedeploy-agent.log
    
 ## 4. Create Deployment
 1. Create Deployment
-2.
+![CodeDevploy](images/cd-create-deployment01.jpg)
+![CodeDevploy](images/cd-create-deployment02.jpg)
+   
+2. The deployment!!!!
+![CodeDevploy](images/)
+
