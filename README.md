@@ -83,5 +83,8 @@ less /var/log/aws/codedeploy-agent/codedeploy-agent.log
 ![CodeDevploy](images/cd-create-deployment02.jpg)
    
 2. The deployment!!!!
-![CodeDevploy](images/)
+![CodeDevploy](images/cd-events.jpg)
+
+a MVP ;) a html from this github
+![CodeDevploy](images/cd-end.jpg)
 
