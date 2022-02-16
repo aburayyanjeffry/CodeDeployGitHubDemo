@@ -1,5 +1,5 @@
-# CodeDeployGitHubDemo
-This is a tutorial how to use AWS CodeDeploy to automate deployment of code from Github to an Apache webserver in an AWS EC2 instance.
+# CodeDeployGitHubDemo 
+This is a tutorial how to use AWS CodeDeploy to automate deployment of code from Github to an Apache webserver in an AWS EC2 instance. This is just a one time taking a code from GitHub and deploy to EC2. For next deployment you need to create another deployment at set 
 ![CodeDevploy](images/codedeploy_flow.jpg)
 
 ## 1. Setup the required Roles
@@ -69,7 +69,7 @@ If you need to check the Code Deploy agent log
 less /var/log/aws/codedeploy-agent/codedeploy-agent.log
 ```
 
-## Create Application 
+## 3. Create Application 
 1. Go to https://console.aws.amazon.com/codedeploy
 2. Create Application , Application Name = mycodedeploy , Compute Platform = EC2/On Premises
 3. Create Deployment Group = mycodedeploy01 , Service Role = < from step #1 >
@@ -77,5 +77,6 @@ less /var/log/aws/codedeploy-agent/codedeploy-agent.log
 4. Uncheck Load Balancer
 5. Create Deployment Group
    
-## Create Deployment
-
+## 4. Create Deployment
+1. Create Deployment
+2.
